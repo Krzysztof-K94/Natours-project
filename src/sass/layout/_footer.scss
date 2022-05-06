@@ -1,0 +1,50 @@
+@use '../abstracts' as *;
+
+.footer {
+    font-size: 1.5rem;
+    background-color: $color-gray-dark-3;
+    padding: 10rem 0;
+
+    &__logo-box {
+        text-align: center;
+        margin-bottom: 8rem;
+    }
+
+    &__logo {
+        width: 15rem;
+        height: auto;
+    }
+
+    &__list {
+        border-top: 1px solid $color-gray-dark-1;
+        padding: 2rem 0;
+        list-style: none;
+        display: flex;
+        gap:  1.5rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-gray-light-1;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .3s;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-primary;
+            transform: skewY(-10deg) scale(1.2);
+            box-shadow: 0 1rem 2rem rgba($color-black, .4);
+        }
+    }
+
+    &__copyright-text {
+        color: $color-gray-light-1;
+        border-top: 1px solid $color-gray-dark-1;
+        padding: 2rem 0;
+        display: inline-block;
+    }
+}

@@ -1,6 +1,7 @@
 @use "../abstracts" as *;
 
 .btn {
+    &,
     &:link,
     &:visited {
         display: inline-block;
@@ -16,6 +17,7 @@
 
         // Change for the <button>
         border: none;
+        cursor: pointer;
     }
     &:hover {
         transform: translateY(-3px);
@@ -27,7 +29,9 @@
         }
     }
 
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-1px);
         box-sizing: 0 5px 10px rgba($color-black, 0.2);
     }

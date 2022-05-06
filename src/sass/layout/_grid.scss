@@ -22,3 +22,8 @@
     max-width: $grid-width;
     column-gap: $vertical-gap;
 }
+
+.footer-grid {
+    grid-template-columns: auto 1fr;
+    column-gap: 26rem;
+}
