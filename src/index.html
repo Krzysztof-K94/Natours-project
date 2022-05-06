@@ -16,6 +16,19 @@
 
 </head>
 <body>
+    <div class="navigation">
+        <button class="navigation__button"><span class="navigation__icon"></span></button>
+        <div class="navigation__background"></div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link">01 About Natous</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">02 Your benefits</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">03 Popular tours</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">04 Stories</a></li>
+                <li class="navigation__item"><a href="#section-book" class="navigation__link">05 Book now</a></li>
+            </ul>
+        </nav>
+    </div>
     <header class="header">
         <div class="header__logo-box">
             <img class="header__logo" src="../img/logo-white.png" alt="Logo">
@@ -25,7 +38,7 @@
                 <span class="heading-primary__main">Outdoors</span>
                 <span class="heading-primary__sub">is where life happens</span>
             </h1>
-            <a class="btn btn--white btn--animated" href="#">Discaver our tours</a>
+            <a class="btn btn--white btn--animated" href="#section-tours">Discaver our tours</a>
         </div>
     </header>
     <main>
@@ -53,7 +66,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-features">
+        <section class="section-features" id="section-features">
             <div class="grid grid-col-4">
 
                 <div class="feature-box">
@@ -82,7 +95,7 @@
 
             </div>
         </section>
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-lg">
                 <h2 class="heading-secondary">Most popular tours</h2>
             </div>
@@ -213,7 +226,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-book">
+        <section class="section-book" id="section-book">
             <div class="grid">
                 <div class="book">
                     <div class="book__form">
@@ -275,5 +288,6 @@
             </div>
         </div>
     </footer>
+    <script src="script/script.js"></script>
 </body>
 </html>
