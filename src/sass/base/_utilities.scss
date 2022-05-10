@@ -5,11 +5,13 @@
     text-align: center;
 }
 
-.u-margin-bottom-lg {
-    margin-bottom: 8rem;
+///////Margin Bottom
+
+.u-margin-bottom-sm {
+    margin-bottom: 1.5rem;
 
     @include respond(tab-port) {
-        margin-bottom: 5rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -21,13 +23,16 @@
     }
 }
 
-.u-margin-bottom-sm {
-    margin-bottom: 1.5rem;
+.u-margin-bottom-lg {
+    margin-bottom: 8rem;
 
     @include respond(tab-port) {
-        margin-bottom: 1rem;
+        margin-bottom: 5rem;
     }
 }
+
+
+///////Margin Top
 
 .u-margin-top-sm {
     margin-top: 1.5rem;
